@@ -1,4 +1,3 @@
-import { request } from 'http';
 import { Router } from 'express';
 import ProductController from '../controllers/ProductsCotroller';
 import { celebrate, Joi, Segments } from 'celebrate';
