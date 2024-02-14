@@ -22,11 +22,11 @@ export default async function rateLimiter(
       duration: 1,
     });
 
-    await limiter.consume(request.ip); //o erro está aqui!
-    /* Argument of type 'string | undefined' is not assignable to parameter of type 'string | number'.
-      Type 'undefined' is not assignable to type 'string | number'.ts(2345)
-      (parameter) request: Request<ParamsDictionary, any, any, QueryString.ParsedQs, Record<string, any>>*/
+    if (!request.ip) {
+      throw new Error('Request IP is undefined');
+    }
 
+    await limiter.consume(request.ip);
     return next();
   } catch (err) {
     throw new AppError('Too many requests.', 429);
