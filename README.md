@@ -22,7 +22,7 @@ Após essa instalação execute a aplicação com o comando `npm run dev`. O ser
 
 ## Configurando o banco de dados
 
-O banco de dados utilizado nesse projeto é o Postgres, e para configurar o seu banco de forma funcional nessa aplicação, basta criar o banco de acordo com as especificações do arquivo **ormconfig.json**. Dentro do projeto, na pasta **src/shared/typeorm/migrations** temos todos os arquivos de migração para criação das nossas tabelas, basta utilizar o comando `npm run typeorm migration:run` e todas as tabelas irão aparecer dentro do banco de dados **apivendas**.
+O banco de dados utilizado nesse projeto é o Postgres, e para configurar o seu banco de forma funcional nessa aplicação, basta criar o banco de acordo com as especificações do arquivo **ormconfig.example.json**. Dentro do projeto, na pasta **src/shared/typeorm/migrations** temos todos os arquivos de migração para criação das nossas tabelas, basta utilizar o comando `npm run typeorm migration:run` e todas as tabelas irão aparecer dentro do banco de dados **apivendas**.
 
 ## Redes Sociais
 
