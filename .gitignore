@@ -13,3 +13,5 @@ uploads/*
 
 
 NOTAS.md
+
+.docker/dbdata
